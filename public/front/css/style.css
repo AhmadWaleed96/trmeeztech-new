@@ -321,7 +321,21 @@ body{
 .Featured {
     background-color: #F5F5F5;
     position: relative;
-    height: 130vh;
+    height: 110vh;
+    padding-bottom: 30px;
+}
+
+.services-slider {
+    margin-top: -60px;
+}
+
+.Featured-cont {
+    background-color: #003366;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 .Featured h1 {
@@ -382,11 +396,12 @@ body{
 
 .Featured .card .card-body p {
     font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 170.2%;
-color: #FFFFFF !important;
-opacity: 0.9;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 170.2%;
+    color: #FFFFFF !important;
+    opacity: 0.9;
+    text-align: start;
 }
 
 .featured-btn {
@@ -398,7 +413,7 @@ opacity: 0.9;
     color: #003366;
     z-index: 4;
     position: absolute;
-    bottom: 8%;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%, 0%);
     text-decoration: none;
@@ -736,7 +751,7 @@ input:focus-visible {
     color: #003366;
     z-index: 4;
     position: absolute;
-    bottom: -15%;
+    bottom: -10%;
     left: 50%;
     transform: translate(-50%, 0%);
     text-decoration: none;
@@ -932,7 +947,7 @@ input:focus-visible {
         background-color: #09396c;
         color: white;
     }
-    
+
     .title-page h2 {
         font-size: 35px;
         font-weight: 700;
@@ -940,7 +955,7 @@ input:focus-visible {
         letter-spacing: 0em;
         text-align: center;
     }
-    
+
     .title-page .interested-left {
         position: absolute;
         left: 0;
@@ -948,7 +963,7 @@ input:focus-visible {
         z-index: 1;
         width: 150px !important;
     }
-    
+
     .title-page .interested-right {
         position: absolute;
         right: 0;
@@ -961,18 +976,18 @@ input:focus-visible {
     .about {
         padding: 30px;
     }
-    
+
     .about .We-are {
         padding: 20px;
         background-color: white;
         border-radius: 20px;
         box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     }
-    
+
     .about .We-are .left {
         padding: 10px;
     }
-    
+
     .about .We-are .left p{
         font-style: normal;
         font-weight: 500;
@@ -980,7 +995,7 @@ input:focus-visible {
         line-height: 37px;
         color: rgba(17, 22, 41, 0.8);
     }
-    
+
     .about .We-are .left h2{
         font-style: normal;
         font-weight: 800;
@@ -988,11 +1003,11 @@ input:focus-visible {
         line-height: 66px;
         color: #003366;
     }
-    
+
     .about .We-are .right .cont {
         padding: 20px;
     }
-    
+
     .about .We-are .right .cont p{
         font-style: normal;
         font-weight: 500;
@@ -1009,7 +1024,7 @@ input:focus-visible {
         height: 65px;
         position: relative;
     }
-    
+
     .div-title h2 {
         font-weight: 600;
         font-size: 30px;
@@ -1017,13 +1032,13 @@ input:focus-visible {
         text-align: center;
         color: #003366;
     }
-    
+
     .div-title .img1{
         position: absolute;
         bottom: 0;
         width: 100px;
     }
-    
+
     .div-title .img2{
         position: absolute;
         right: 0;
@@ -1040,7 +1055,7 @@ input:focus-visible {
         width: 480px !important;
         margin: 50px 0;
     }
-    
+
     .job .card h2 {
         font-weight: 600;
         font-size: 30px;
@@ -1048,21 +1063,21 @@ input:focus-visible {
         text-align: start;
         color: #1D3867;
     }
-    
+
     .job .card p {
         font-weight: 500;
         font-size: 25px;
         line-height: 47px;
         color: #1D3867;
     }
-    
+
     .job .card span {
         font-weight: 500;
         font-size: 25px;
         line-height: 47px;
         color: #2A7997;
     }
-    
+
     .job .card a {
         font-weight: 500;
         font-size: 25px;
@@ -1070,7 +1085,7 @@ input:focus-visible {
         color: #2A7997;
         text-decoration: none;
     }
-    
+
     .job .card button {
         box-shadow: 0px 58px 76px 0px #07003B0F;
         background-color: #003366;
@@ -1125,12 +1140,8 @@ input:focus-visible {
         margin: 0px !important;
     }
 
-    .Featured {
-        height: 105vh;
-    }
-
     .menu-services {
-        
+
         width: fit-content;
         padding: 10px 25px;
     }
@@ -1146,7 +1157,7 @@ input:focus-visible {
         flex-direction: row;
         align-items: center;
     }
-    
+
     .cont-services span .img-down{
         width: 45px;
         height: 45px;
@@ -1155,12 +1166,71 @@ input:focus-visible {
         display: flex;
         align-items: center;
     }
-    
+
     .cont-services span img{
         position: relative;
         left: 50%;
         transform: translate(-50% , 0);
         width: 30px;
+    }
+
+    .Featured {
+        background-color: #F5F5F5;
+        position: relative;
+        height: 110vh;
+        padding-bottom: 30px;
+    }
+
+    .services-slider {
+        margin-top: -60px;
+    }
+
+    .Featured-cont {
+        background-color: #003366;
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .Featured a {
+        bottom: -10%;
+    }
+
+    .Featured img {
+        border-radius: 15px;
+    }
+
+    .Featured .card-text {
+        text-align: start;
+    }
+
+    .side-icons {
+        position: absolute;
+        background-color: #fff;
+        border-radius: 10px 0 0 10px;
+        top: 50%;
+        right: 0;
+        z-index: 99999;
+        box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+        display: flex;
+        width: 50px;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(-2px, -50px);
+    }
+
+    .side-icons .whatsapp i {
+        font-size: 40px;
+        color: white;
+        background-color: #25D366;
+        padding: 8px;
+        border-radius: 10px 0 0 0;
+    }
+
+    footer {
+        position: relative;
     }
 }
 
@@ -1274,7 +1344,7 @@ input:focus-visible {
     font-size: 14px;
     margin: 10px;
     }
-    
+
     .form-consultation {
         width: 60%;
     padding: 15px 10px;
@@ -1304,7 +1374,7 @@ input:focus-visible {
     height: 250px;
     }
 
-    
+
     .image-consultation {
         position: absolute;
         bottom: 0;
@@ -1420,7 +1490,7 @@ input:focus-visible {
     color: #003366;
     z-index: 4;
     position: absolute;
-    bottom: -15%;
+    bottom: -10%;
     left: 50%;
     transform: translate(-50%, 0%);
     text-decoration: none;
@@ -1503,7 +1573,7 @@ input:focus-visible {
         background-color: #09396c;
         color: white;
     }
-    
+
     .title-page h2 {
         font-size: 35px;
         font-weight: 700;
@@ -1511,7 +1581,7 @@ input:focus-visible {
         letter-spacing: 0em;
         text-align: center;
     }
-    
+
     .title-page .interested-left {
         position: absolute;
         left: 0;
@@ -1519,7 +1589,7 @@ input:focus-visible {
         z-index: 1;
         width: 180px !important;
     }
-    
+
     .title-page .interested-right {
         position: absolute;
         right: 0;
@@ -1533,18 +1603,18 @@ input:focus-visible {
     .about {
         padding: 30px;
     }
-    
+
     .about .We-are {
         padding: 20px;
         background-color: white;
         border-radius: 20px;
         box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     }
-    
+
     .about .We-are .left {
         padding: 10px;
     }
-    
+
     .about .We-are .left p{
         font-style: normal;
         font-weight: 500;
@@ -1552,7 +1622,7 @@ input:focus-visible {
         line-height: 37px;
         color: rgba(17, 22, 41, 0.8);
     }
-    
+
     .about .We-are .left h2{
         font-style: normal;
         font-weight: 800;
@@ -1560,11 +1630,11 @@ input:focus-visible {
         line-height: 66px;
         color: #003366;
     }
-    
+
     .about .We-are .right .cont {
         padding: 20px;
     }
-    
+
     .about .We-are .right .cont p{
         font-style: normal;
         font-weight: 500;
@@ -1581,7 +1651,7 @@ input:focus-visible {
         height: 75px;
         position: relative;
     }
-    
+
     .div-title h2 {
         font-weight: 600;
         font-size: 40px;
@@ -1589,13 +1659,13 @@ input:focus-visible {
         text-align: center;
         color: #003366;
     }
-    
+
     .div-title .img1{
         position: absolute;
         bottom: 0;
         width: 130px;
     }
-    
+
     .div-title .img2{
         position: absolute;
         right: 0;
@@ -1612,7 +1682,7 @@ input:focus-visible {
         width: 480px !important;
         margin: 50px 0;
     }
-    
+
     .job .card h2 {
         font-weight: 600;
         font-size: 30px;
@@ -1620,21 +1690,21 @@ input:focus-visible {
         text-align: start;
         color: #1D3867;
     }
-    
+
     .job .card p {
         font-weight: 500;
         font-size: 25px;
         line-height: 47px;
         color: #1D3867;
     }
-    
+
     .job .card span {
         font-weight: 500;
         font-size: 25px;
         line-height: 47px;
         color: #2A7997;
     }
-    
+
     .job .card a {
         font-weight: 500;
         font-size: 25px;
@@ -1642,7 +1712,7 @@ input:focus-visible {
         color: #2A7997;
         text-decoration: none;
     }
-    
+
     .job .card button {
         box-shadow: 0px 58px 76px 0px #07003B0F;
         background-color: #003366;
@@ -1674,7 +1744,7 @@ input:focus-visible {
     }
 
     .menu-services {
-        
+
         width: fit-content;
         padding: 10px 25px;
     }
@@ -1690,7 +1760,7 @@ input:focus-visible {
         flex-direction: row;
         align-items: center;
     }
-    
+
     .cont-services span .img-down{
         width: 45px;
         height: 45px;
@@ -1699,12 +1769,39 @@ input:focus-visible {
         display: flex;
         align-items: center;
     }
-    
+
     .cont-services span img{
         position: relative;
         left: 50%;
         transform: translate(-50% , 0);
         width: 30px;
+    }
+
+    .side-icons {
+        position: absolute;
+        background-color: #fff;
+        border-radius: 10px 0 0 10px;
+        top: 50%;
+        right: 0;
+        z-index: 99999;
+        box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+        display: flex;
+        width: 50px;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(-2px, -50px);
+    }
+
+    .side-icons .whatsapp i {
+        font-size: 40px;
+        color: white;
+        background-color: #25D366;
+        padding: 8px;
+        border-radius: 10px 0 0 0;
+    }
+
+    footer {
+        position: relative;
     }
 }
 
@@ -1867,7 +1964,7 @@ input:focus-visible {
     color: #003366;
     z-index: 4;
     position: absolute;
-    bottom: -15%;
+    bottom: -10%;
     left: 50%;
     transform: translate(-50%, 0%);
     text-decoration: none;
@@ -1995,7 +2092,7 @@ input:focus-visible {
         background-color: #09396c;
         color: white;
     }
-    
+
     .title-page h2 {
         font-size: 35px;
         font-weight: 700;
@@ -2003,7 +2100,7 @@ input:focus-visible {
         letter-spacing: 0em;
         text-align: center;
     }
-    
+
     .title-page .interested-left {
         position: absolute;
         left: 0;
@@ -2011,7 +2108,7 @@ input:focus-visible {
         z-index: 1;
         width: 200px !important;
     }
-    
+
     .title-page .interested-right {
         position: absolute;
         right: 0;
@@ -2025,18 +2122,18 @@ input:focus-visible {
     .about {
         padding: 40px;
     }
-    
+
     .about .We-are {
         padding: 20px;
         background-color: white;
         border-radius: 20px;
         box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     }
-    
+
     .about .We-are .left {
         padding: 10px;
     }
-    
+
     .about .We-are .left p{
         font-style: normal;
         font-weight: 500;
@@ -2044,7 +2141,7 @@ input:focus-visible {
         line-height: 37px;
         color: rgba(17, 22, 41, 0.8);
     }
-    
+
     .about .We-are .left h2{
         font-style: normal;
         font-weight: 800;
@@ -2052,11 +2149,11 @@ input:focus-visible {
         line-height: 66px;
         color: #003366;
     }
-    
+
     .about .We-are .right .cont {
         padding: 20px;
     }
-    
+
     .about .We-are .right .cont p{
         font-style: normal;
         font-weight: 500;
@@ -2073,7 +2170,7 @@ input:focus-visible {
         height: 85px;
         position: relative;
     }
-    
+
     .div-title h2 {
         font-weight: 600;
         font-size: 40px;
@@ -2081,13 +2178,13 @@ input:focus-visible {
         text-align: center;
         color: #003366;
     }
-    
+
     .div-title .img1{
         position: absolute;
         bottom: 0;
         width: 185px;
     }
-    
+
     .div-title .img2{
         position: absolute;
         right: 0;
@@ -2104,7 +2201,7 @@ input:focus-visible {
         width: 500px !important;
         margin: 50px 0;
     }
-    
+
     .job .card h2 {
         font-weight: 600;
         font-size: 30px;
@@ -2112,21 +2209,21 @@ input:focus-visible {
         text-align: start;
         color: #1D3867;
     }
-    
+
     .job .card p {
         font-weight: 500;
         font-size: 25px;
         line-height: 47px;
         color: #1D3867;
     }
-    
+
     .job .card span {
         font-weight: 500;
         font-size: 25px;
         line-height: 47px;
         color: #2A7997;
     }
-    
+
     .job .card a {
         font-weight: 500;
         font-size: 25px;
@@ -2134,7 +2231,7 @@ input:focus-visible {
         color: #2A7997;
         text-decoration: none;
     }
-    
+
     .job .card button {
         box-shadow: 0px 58px 76px 0px #07003B0F;
         background-color: #003366;
@@ -2148,7 +2245,7 @@ input:focus-visible {
         bottom: 0% !important;
         transform: translate( 50% , 50%) !important;
     }
-    
+
     .contact .card {
         width: 550px !important;
     }
@@ -2166,7 +2263,7 @@ input:focus-visible {
     }
 
     .menu-services {
-        
+
         width: fit-content;
         padding: 10px 25px;
     }
@@ -2182,7 +2279,7 @@ input:focus-visible {
         flex-direction: row;
         align-items: center;
     }
-    
+
     .cont-services span .img-down{
         width: 45px;
         height: 45px;
@@ -2191,12 +2288,39 @@ input:focus-visible {
         display: flex;
         align-items: center;
     }
-    
+
     .cont-services span img{
         position: relative;
         left: 50%;
         transform: translate(-50% , 0);
         width: 30px;
+    }
+
+    .side-icons {
+        position: absolute;
+        background-color: #fff;
+        border-radius: 10px 0 0 10px;
+        top: 50%;
+        right: 0;
+        z-index: 99999;
+        box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+        display: flex;
+        width: 50px;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(-2px, -50px);
+    }
+
+    .side-icons .whatsapp i {
+        font-size: 40px;
+        color: white;
+        background-color: #25D366;
+        padding: 8px;
+        border-radius: 10px 0 0 0;
+    }
+
+    footer {
+        position: relative;
     }
 }
 
@@ -2363,7 +2487,7 @@ input:focus-visible {
     color: #003366;
     z-index: 4;
     position: absolute;
-    bottom: -15%;
+    bottom: -10%;
     left: 50%;
     transform: translate(-50%, 0%);
     text-decoration: none;
@@ -2393,7 +2517,7 @@ input:focus-visible {
         background-color: #09396c;
         color: white;
     }
-    
+
     .title-page h2 {
         font-size: 35px;
         font-weight: 700;
@@ -2401,7 +2525,7 @@ input:focus-visible {
         letter-spacing: 0em;
         text-align: center;
     }
-    
+
     .title-page .interested-left {
         position: absolute;
         left: 0;
@@ -2409,7 +2533,7 @@ input:focus-visible {
         z-index: 1;
         width: 250px !important;
     }
-    
+
     .title-page .interested-right {
         position: absolute;
         right: 0;
@@ -2423,18 +2547,18 @@ input:focus-visible {
     .about {
         padding: 70px;
     }
-    
+
     .about .We-are {
         padding: 20px;
         background-color: white;
         border-radius: 20px;
         box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     }
-    
+
     .about .We-are .left {
         padding: 80px 0;
     }
-    
+
     .about .We-are .left p{
         font-style: normal;
         font-weight: 500;
@@ -2442,7 +2566,7 @@ input:focus-visible {
         line-height: 37px;
         color: rgba(17, 22, 41, 0.8);
     }
-    
+
     .about .We-are .left h2{
         font-style: normal;
         font-weight: 800;
@@ -2450,11 +2574,11 @@ input:focus-visible {
         line-height: 66px;
         color: #003366;
     }
-    
+
     .about .We-are .right .cont {
         padding: 20px;
     }
-    
+
     .about .We-are .right .cont p{
         font-style: normal;
         font-weight: 500;
@@ -2471,7 +2595,7 @@ input:focus-visible {
         height: 100px;
         position: relative;
     }
-    
+
     .div-title h2 {
         font-weight: 600;
         font-size: 40px;
@@ -2479,13 +2603,13 @@ input:focus-visible {
         text-align: center;
         color: #003366;
     }
-    
+
     .div-title .img1{
         position: absolute;
         bottom: 0;
         width: 270px;
     }
-    
+
     .div-title .img2{
         position: absolute;
         right: 0;
@@ -2500,7 +2624,7 @@ input:focus-visible {
         padding: 20px;
         position: relative;
     }
-    
+
     .job .card h2 {
         font-weight: 600;
         font-size: 30px;
@@ -2508,21 +2632,21 @@ input:focus-visible {
         text-align: start;
         color: #1D3867;
     }
-    
+
     .job .card p {
         font-weight: 500;
         font-size: 25px;
         line-height: 47px;
         color: #1D3867;
     }
-    
+
     .job .card span {
         font-weight: 500;
         font-size: 25px;
         line-height: 47px;
         color: #2A7997;
     }
-    
+
     .job .card a {
         font-weight: 500;
         font-size: 25px;
@@ -2530,7 +2654,7 @@ input:focus-visible {
         color: #2A7997;
         text-decoration: none;
     }
-    
+
     .job .card button {
         box-shadow: 0px 58px 76px 0px #07003B0F;
         background-color: #003366;
@@ -2546,7 +2670,7 @@ input:focus-visible {
     }
 
     .menu-services {
-        
+
         width: fit-content;
         padding: 10px 25px;
     }
@@ -2562,7 +2686,7 @@ input:focus-visible {
         flex-direction: row;
         align-items: center;
     }
-    
+
     .cont-services span .img-down{
         width: 45px;
         height: 45px;
@@ -2571,14 +2695,37 @@ input:focus-visible {
         display: flex;
         align-items: center;
     }
-    
+
     .cont-services span img{
         position: relative;
         left: 50%;
         transform: translate(-50% , 0);
         width: 30px;
     }
-    
+
+    .side-icons {
+        position: fixed;
+        background-color: #fff;
+        border-radius: 10px 0 0 10px;
+        top: 50%;
+        right: 0;
+        z-index: 99999;
+        box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+        display: flex;
+        width: 50px;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(0px, -50px);
+    }
+
+    .side-icons .whatsapp i {
+        font-size: 40px;
+        color: white;
+        background-color: #25D366;
+        padding: 8px;
+        border-radius: 10px 0 0 0;
+    }
+
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -2726,7 +2873,7 @@ input:focus-visible {
     color: #003366;
     z-index: 4;
     position: absolute;
-    bottom: -15%;
+    bottom: -10%;
     left: 50%;
     transform: translate(-50%, 0%);
     text-decoration: none;
@@ -2756,7 +2903,7 @@ input:focus-visible {
         background-color: #09396c;
         color: white;
     }
-    
+
     .title-page h2 {
         font-size: 35px;
         font-weight: 700;
@@ -2764,7 +2911,7 @@ input:focus-visible {
         letter-spacing: 0em;
         text-align: center;
     }
-    
+
     .title-page .interested-left {
         position: absolute;
         left: 0;
@@ -2772,7 +2919,7 @@ input:focus-visible {
         z-index: 1;
         width: 300px;
     }
-    
+
     .title-page .interested-right {
         position: absolute;
         right: 0;
@@ -2786,18 +2933,18 @@ input:focus-visible {
     .about {
         padding: 70px;
     }
-    
+
     .about .We-are {
         padding: 20px;
         background-color: white;
         border-radius: 20px;
         box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     }
-    
+
     .about .We-are .left {
         padding: 80px 0;
     }
-    
+
     .about .We-are .left p{
         font-style: normal;
         font-weight: 500;
@@ -2805,7 +2952,7 @@ input:focus-visible {
         line-height: 37px;
         color: rgba(17, 22, 41, 0.8);
     }
-    
+
     .about .We-are .left h2{
         font-style: normal;
         font-weight: 800;
@@ -2813,11 +2960,11 @@ input:focus-visible {
         line-height: 66px;
         color: #003366;
     }
-    
+
     .about .We-are .right .cont {
         padding: 20px;
     }
-    
+
     .about .We-are .right .cont p{
         font-style: normal;
         font-weight: 500;
@@ -2833,7 +2980,7 @@ input:focus-visible {
         height: 100px;
         position: relative;
     }
-    
+
     .div-title h2 {
         font-weight: 600;
         font-size: 40px;
@@ -2841,13 +2988,13 @@ input:focus-visible {
         text-align: center;
         color: #003366;
     }
-    
+
     .div-title .img1{
         position: absolute;
         bottom: 0;
         width: 350px;
     }
-    
+
     .div-title .img2{
         position: absolute;
         right: 0;
@@ -2862,7 +3009,7 @@ input:focus-visible {
         padding: 20px;
         position: relative;
     }
-    
+
     .job .card h2 {
         font-weight: 600;
         font-size: 30px;
@@ -2870,21 +3017,21 @@ input:focus-visible {
         text-align: start;
         color: #1D3867;
     }
-    
+
     .job .card p {
         font-weight: 500;
         font-size: 25px;
         line-height: 47px;
         color: #1D3867;
     }
-    
+
     .job .card span {
         font-weight: 500;
         font-size: 25px;
         line-height: 47px;
         color: #2A7997;
     }
-    
+
     .job .card a {
         font-weight: 500;
         font-size: 25px;
@@ -2892,7 +3039,7 @@ input:focus-visible {
         color: #2A7997;
         text-decoration: none;
     }
-    
+
     .job .card button {
         box-shadow: 0px 58px 76px 0px #07003B0F;
         background-color: #003366;
@@ -2908,7 +3055,7 @@ input:focus-visible {
     }
 
     .menu-services {
-        
+
         width: fit-content;
         padding: 10px 25px;
     }
@@ -2924,7 +3071,7 @@ input:focus-visible {
         flex-direction: row;
         align-items: center;
     }
-    
+
     .cont-services span .img-down{
         width: 45px;
         height: 45px;
@@ -2933,14 +3080,37 @@ input:focus-visible {
         display: flex;
         align-items: center;
     }
-    
+
     .cont-services span img{
         position: relative;
         left: 50%;
         transform: translate(-50% , 0);
         width: 30px;
     }
-    
+
+    .side-icons {
+        position: fixed;
+        background-color: #fff;
+        border-radius: 10px 0 0 10px;
+        top: 50%;
+        right: 0;
+        z-index: 99999;
+        box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+        display: flex;
+        width: 50px;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(0px, -50px);
+    }
+
+    .side-icons .whatsapp i {
+        font-size: 40px;
+        color: white;
+        background-color: #25D366;
+        padding: 8px;
+        border-radius: 10px 0 0 0;
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -3058,7 +3228,7 @@ input:focus-visible {
     color: #003366;
     z-index: 4;
     position: absolute;
-    bottom: -15%;
+    bottom: -10%;
     left: 50%;
     transform: translate(-50%, 0%);
     text-decoration: none;
@@ -3100,7 +3270,7 @@ input:focus-visible {
         background-color: #09396c;
         color: white;
     }
-    
+
     .title-page h2 {
         font-size: 35px;
         font-weight: 700;
@@ -3108,7 +3278,7 @@ input:focus-visible {
         letter-spacing: 0em;
         text-align: center;
     }
-    
+
     .title-page .interested-left {
         position: absolute;
         left: 0;
@@ -3116,7 +3286,7 @@ input:focus-visible {
         z-index: 1;
         width: 300px;
     }
-    
+
     .title-page .interested-right {
         position: absolute;
         right: 0;
@@ -3130,18 +3300,18 @@ input:focus-visible {
     .about {
         padding: 70px;
     }
-    
+
     .about .We-are {
         padding: 20px;
         background-color: white;
         border-radius: 20px;
         box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     }
-    
+
     .about .We-are .left {
         padding: 80px 0;
     }
-    
+
     .about .We-are .left p{
         font-style: normal;
         font-weight: 500;
@@ -3149,7 +3319,7 @@ input:focus-visible {
         line-height: 37px;
         color: rgba(17, 22, 41, 0.8);
     }
-    
+
     .about .We-are .left h2{
         font-style: normal;
         font-weight: 800;
@@ -3157,11 +3327,11 @@ input:focus-visible {
         line-height: 66px;
         color: #003366;
     }
-    
+
     .about .We-are .right .cont {
         padding: 20px;
     }
-    
+
     .about .We-are .right .cont p{
         font-style: normal;
         font-weight: 500;
@@ -3176,7 +3346,7 @@ input:focus-visible {
         height: 100px;
         position: relative;
     }
-    
+
     .div-title h2 {
         font-weight: 600;
         font-size: 40px;
@@ -3184,13 +3354,13 @@ input:focus-visible {
         text-align: center;
         color: #003366;
     }
-    
+
     .div-title .img1{
         position: absolute;
         bottom: 0;
         width: 450px;
     }
-    
+
     .div-title .img2{
         position: absolute;
         right: 0;
@@ -3205,7 +3375,7 @@ input:focus-visible {
         padding: 20px;
         position: relative;
     }
-    
+
     .job .card h2 {
         font-weight: 600;
         font-size: 30px;
@@ -3213,21 +3383,21 @@ input:focus-visible {
         text-align: start;
         color: #1D3867;
     }
-    
+
     .job .card p {
         font-weight: 500;
         font-size: 25px;
         line-height: 47px;
         color: #1D3867;
     }
-    
+
     .job .card span {
         font-weight: 500;
         font-size: 25px;
         line-height: 47px;
         color: #2A7997;
     }
-    
+
     .job .card a {
         font-weight: 500;
         font-size: 25px;
@@ -3235,7 +3405,7 @@ input:focus-visible {
         color: #2A7997;
         text-decoration: none;
     }
-    
+
     .job .card button {
         box-shadow: 0px 58px 76px 0px #07003B0F;
         background-color: #003366;
@@ -3260,7 +3430,7 @@ input:focus-visible {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .cont-services span .img-down{
         width: 90px;
         height: 90px;
@@ -3269,7 +3439,7 @@ input:focus-visible {
         display: flex;
         align-items: center;
     }
-    
+
     .cont-services span img{
         position: relative;
         left: 50%;
@@ -3288,6 +3458,29 @@ input:focus-visible {
         padding: 50px 245px !important;
     }
 
+    .side-icons {
+        position: fixed;
+        background-color: #fff;
+        border-radius: 10px 0 0 10px;
+        top: 50%;
+        right: 0;
+        z-index: 99999;
+        box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
+        display: flex;
+        width: 50px;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(0px, -50px);
+    }
+
+    .side-icons .whatsapp i {
+        font-size: 40px;
+        color: white;
+        background-color: #25D366;
+        padding: 8px;
+        border-radius: 10px 0 0 0;
+    }
+
 }
 
 #btn-back-to-top {
@@ -3297,21 +3490,6 @@ input:focus-visible {
     display: none;
   }
 
-.side-icons {
-    position: fixed;
-    background-color: #fff;
-    border-radius: 10px 0 0 10px;
-    top: 50%;
-    right: 0;
-    z-index: 99999;
-    box-shadow: 0px 0px 4px rgb(0 0 0 / 25%);
-    display: flex;
-    width: 50px;
-    flex-direction: column;
-    align-items: center;
-    transform: translate(0px, -50px);
-}
-
 .side-icons .icon {
     display: flex;
     justify-content: center;
@@ -3320,13 +3498,6 @@ input:focus-visible {
     height: 50px;
 }
 
-.side-icons .whatsapp i {
-    font-size: 40px;
-    color: white;
-    background-color: #25D366;
-    padding: 8px;
-    border-radius: 10px 0 0 0;
-}
 
 .side-icons .phone i {
     font-size: 30px;
@@ -3336,7 +3507,7 @@ input:focus-visible {
 }
 
 .side-icons .whatsapp a{
-    width: 50px;
+    width: fit-content;
     height: 50px;
     display: block;
     position: absolute;
@@ -3364,7 +3535,7 @@ input:focus-visible {
 }
 
 .side-icons .phone a {
-    width: 0px;
+    width: fit-content;
     height: 50px;
     display: block;
     position: absolute;
@@ -3417,7 +3588,7 @@ input:focus-visible {
     color: #1d3867 !important;
     animation: example 2s infinite;
     border-radius: 50%;
-    z-index: 1000;
+    z-index: 100000;
 }
 
 .top.show {
@@ -3821,4 +3992,7 @@ footer {
     font-size: 16px;
     line-height: 20px;
     color: #003366;
+}
+.slick-dots {
+    display: none !important;
 }
