@@ -1,5 +1,7 @@
 @extends('front.master')
 
+@section('title', 'Term And Conditions -' . config('app.name'))
+
 @section('content')
 
 <!-- start section title-page -->

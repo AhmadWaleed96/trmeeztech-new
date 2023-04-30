@@ -1,5 +1,7 @@
 @extends('front.master')
 
+@section('title', 'Blog -' . config('app.name'))
+
 @section('content')
 
 <!-- start section title-page -->

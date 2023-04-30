@@ -1,5 +1,7 @@
 @extends('front.master')
 
+@section('title', 'Home -' . config('app.name'))
+
 @section('content')
 
       <!-- start section hero -->
@@ -10,8 +12,8 @@
         <p class="paragraph-hero">Some people spend a lot of time searching for software companies specialized in creating and developing custom websites, electronic stores, designing mobile applications, or any service they wish to implement. </p>
 
         <div class="link-hero d-flex">
-            <a class="btn btn-more" href="">See more</a>
-            <a class="btn btn-contact" href="">Contact Us</a>
+            <a class="btn btn-more" href="{{ route('index-about') }}">See more</a>
+            <a class="btn btn-contact" href="{{ route('index-contact') }}">Contact Us</a>
         </div>
     </div>
     <img class="back-hero" src="{{ asset('front/image/back-hero.png') }}" alt="">
@@ -31,7 +33,7 @@
         </div>
         <img class="col-12 col-sm-12 col-md-12 col-lg-12" src="{{ asset('front/image/Design-Build-Run 1.png') }}" alt="">
 
-        <a class="btn btn-more" href="">See more</a>
+        <a class="btn btn-more" href="{{ route('index-strategy') }}">See more</a>
     </div>
 </section>
 <!-- end section How -->
@@ -60,91 +62,6 @@
             </div>
           </div>
           @endforeach
-            {{-- <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                    <img src="{{asset('front/image/brandingAsset 4 1.png')}}" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Branding</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut </p>
-                  <div class="con-btn">
-                    <a href="#" class="card-link">Read More <span><img src="{{asset('front/image/Path 8.png')}}" alt=""></span><span><img src="{{asset('front/image/Path 9.png')}}" alt=""></span></a>
-                  </div>
-                </div>
-              </div> --}}
-              {{-- <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                    <img src="{{asset('front/image/graphic designAsset 2 1.png')}}" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Graphic design</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut </p>
-                  <div class="con-btn">
-                    <a href="#" class="card-link">Read More <span><img src="{{asset('front/image/Path 8.png')}}" alt=""></span><span><img src="{{asset('front/image/Path 9.png')}}" alt=""></span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                    <img src="{{asset('front/image/software developmentAsset 1 1.png')}}" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Software development</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut </p>
-                  <div class="con-btn">
-                    <a href="#" class="card-link">Read More <span><img src="{{asset('front/image/Path 8.png')}}" alt=""></span><span><img src="{{asset('front/image/Path 9.png')}}" alt=""></span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                    <img src="image/web developmentAsset 3 1.png" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Web development</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut </p>
-                  <div class="con-btn">
-                    <a href="#" class="card-link">Read More <span><img src="image/Path 8.png" alt=""></span><span><img src="image/Path 9.png" alt=""></span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                    <img src="image/Voice.png" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Writing content and voiceover</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut </p>
-                  <div class="con-btn">
-                    <a href="#" class="card-link">Read More <span><img src="{{ asset('front/image/Path 8.png') }}" alt=""></span><span><img src="{{ asset('front/image/Path 9.png') }}" alt=""></span></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                    <img src="image/brandingAsset 4 1.png" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Social media management</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut </p>
-                  <div class="con-btn">
-                    <a href="#" class="card-link">Read More <span><img src="image/Path 8.png" alt=""></span><span><img src="image/Path 9.png" alt=""></span></a>
-                  </div>
-                </div>
-              </div> --}}
         </div>
     </div>
 </section>
@@ -156,7 +73,7 @@
         <div class="row">
             <h2>Interested to work with us ?</h2>
             <p>Get a free consultation</p>
-            <a href="">tarmeeztach@example.com</a>
+            <a href="mailto: info@tarmeeztech.com">info@tarmeeztech.com</a>
         </div>
     </div>
     <img class="interested-img interested-left" src="{{ asset('front/image/Vector 1.png') }}" alt="">
@@ -228,7 +145,7 @@
                         </div>
             </div>
         </div>
-        <a class="featured-btn" href="">See More</a>
+        <a class="featured-btn" href="{{ route('index-business-identity') }}">See More</a>
     </div>
 </section>
 <!-- end section Featured -->

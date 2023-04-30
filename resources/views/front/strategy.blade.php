@@ -8,12 +8,12 @@
     }
 </style>
 <div class="header"
-style="background:  url('{{asset('siteassets/images/background-sub/stratigy-ar.svg')}}') no-repeat center center / cover">
+style="background:  url('{{asset('front/image/Group 186.svg')}}') no-repeat center center / cover">
 </div>
 @endif
 @if (app()->currentLocale() == 'en')
 <div class="header"
-style="background:  url('{{asset('siteassets/images/background-sub/stratigy-en.svg')}}') no-repeat center center / cover">
+style="background:  url('{{asset('front/image/Group 185.svg')}}') no-repeat center center / cover">
 </div>
 @endif
 @php
@@ -33,35 +33,32 @@ style="background:  url('{{asset('siteassets/images/background-sub/stratigy-en.s
             <div class="container">
                 <div class="text ">
                     <h2 class="title wow animate__animated animate__backInLeft">
-                        {{__('site.Three steps')}}
+                        {{__('Three steps')}}
                     </h2>
-                    <!-- <p class="p-section">
-                        {{__("site.stratigy_page_title")}}
-                    </p> -->
                 </div>
                 <div class="projects">
                     <div class="project project1">
-                        <embed style="width: 300px; height:300px" src="{{ asset('siteassets/images/design.svg') }}" alt="image project">
+                        <embed style="width: 300px; height:300px" src="{{ asset('front/image/design.svg') }}" alt="image project">
                         <div class="text">
-                            <h1>{{__("site.stratigy_1_title")}}</h1>
+                            <h1>{{__("UX/UI")}}</h1>
                             <div class="line"></div>
-                            <p>{{__("site.stratigy_1")}}</p>
+                            <p>{{__("The first strategies in your branding company Now you will start your journey with us for your commercial project. The first step will be designing the ui ux user interface, where we design and manage the two businesses with the hands of the best designers and experts. We develop a plan informed by data and visions to create better experiences and influence customer behavior. Work is done on designing and developing in a responsive manner that supports all computers")}}</p>
                         </div>
                     </div>
                     <div class="project project2">
-                        <embed style="width: 300px; height:300px" src="{{ asset('siteassets/images/build.svg') }}" alt="image project">
+                        <embed style="width: 300px; height:300px" src="{{ asset('front/image/build.svg') }}" alt="image project">
                         <div class="text">
-                            <h1>{{__("site.stratigy_2_title")}}</h1>
+                            <h1>{{__("Front End")}}</h1>
                             <div class="line"></div>
-                            <p>{{__("site.stratigy_2")}}</p>
+                            <p>{{__("The second strategy for Markeztak now is to build the front end of your website after completing a design in several programming languages from scratch, step by step, to ensure that your website is compatible with all screen devices and to ensure that no technical problems occur in the future. After completion, the backend interface of your site is built, which is the part responsible for storing and organizing information systems and making sure that everything in the site interface works with the highest possible efficiency, high quality and speed.")}}</p>
                         </div>
                     </div>
                     <div class="project project1">
-                        <embed style="width: 300px; height:300px" src="{{ asset('siteassets/images/run.svg') }}" alt="image project">
+                        <embed style="width: 300px; height:300px" src="{{ asset('front/image/run.svg') }}" alt="image project">
                         <div class="text">
-                            <h1>{{__("site.stratigy_3_title")}}</h1>
+                            <h1>{{__("Launching the project")}}</h1>
                             <div class="line"></div>
-                            <p>{{__("site.stratigy_3")}}</p>
+                            <p>{{__("The third strategy in your markup company here will be the launch of your commercial project after designing and building according to an approach that keeps pace with the new era. Speed and ease of use, uh, have now begun your first steps towards success in achieving your goals for your commercial project. Now our business will speak about you and your markup with pride.")}}</p>
                         </div>
                     </div>
                 </div>

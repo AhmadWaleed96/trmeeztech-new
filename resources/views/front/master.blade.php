@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ asset('front/css/style.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('slick/slick.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ asset('slick/slick-theme.css') }}"/>
-    <title>Tarmmeez Tach</title>
+    <title> @yield('title') </title>
 </head>
 
 <body>
@@ -105,7 +105,7 @@
             </ul>
             <form>
                 <div class="contact d-flex justify-content-center align-items-center">
-                    <a class="nav-link p-0" href="">+1-1245-698-9872 <img src="{{ asset("front/image/phone-icon.png") }}" alt="" width="15px" height="15px"></a>
+                    <a class="nav-link p-0" href="tel:+1 1245 698 9872">+1-1245-698-9872 <img src="{{ asset("front/image/phone-icon.png") }}" alt="" width="15px" height="15px"></a>
                 </div>
                 <div class="nav-item dropdown d-none d-sm-none d-md-none d-lg-none d-xl-flex">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -140,21 +140,22 @@
                     padding: 5px 10px; margin: -5px 0;"></i>
                     <div>
                         <p style="color: #003366; font-size: 20px; margin: 0;">Mail</p>
-                        <a style="color: #003366; font-size: 20px; margin: 0; padding: 0; text-decoration: none;" href="">info@tarmeecteh.com</a>
+                        <a style="color: #003366; font-size: 20px; margin: 0; padding: 0; text-decoration: none;" href="mailto: info@tarmeeztech.com">info@tarmeecteh.com</a>
                     </div>
                 </div>
                 <div class="d-flex" style="padding: 15px 0;">
                     <i class="fa-solid fa-mobile-screen-button" style="color: #003366; font-size: 60px; padding: 5px 10px; margin: -5px 0;"></i>
                     <div>
                         <p style="color: #003366; font-size: 20px; margin: 0;">Mobile</p>
-                        <a style="color: #003366; font-size: 20px; margin: 0; padding: 0; text-decoration: none;" href="">(+966) 56 138 8363 - (+1) 307 392 4176</a>
+                        <a style="color: #003366; font-size: 20px; margin: 0; padding: 0; text-decoration: none;" href="tel: (+966) 56 138 8363">(+966) 56 138 8363 -</a>
+                        <a style="color: #003366; font-size: 20px; margin: 0; padding: 0; text-decoration: none;" href="tel: (+1) 307 392 4176"> (+1) 307 392 4176</a>
                     </div>
                 </div>
                 <div class="d-flex" style="padding: 15px 0;">
                     <i class="fa-solid fa-location-dot" style="color: #003366; font-size: 60px; padding: 5px 10px; margin: -5px 0;"></i>
                     <div>
                         <p style="color: #003366; font-size: 20px; margin: 0;">Location</p>
-                        <a style="color: #003366; font-size: 20px; margin: 0; padding: 0; text-decoration: none;" href="">4030 Plaza Dr 3 Casper, WY 82604 USA</a>
+                        <a style="color: #003366; font-size: 20px; margin: 0; padding: 0; text-decoration: none;">4030 Plaza Dr 3 Casper, WY 82604 USA</a>
                     </div>
                 </div>
             </div>
@@ -164,7 +165,7 @@
             <p style="color: #003366; font-size: 20px; padding: 25px 0;">The key to being a brand that not only makes a good impression, but also refuses to evaporate from the eve</p>
 
             <div class="link-footer">
-                <a href="{{ route('index-policy') }}">special policy</a>
+                <a href="{{ route('index-policy') }}">Special Policy</a>
                 <a href="{{ route('index-terms-and-conditions') }}">Terms and Conditions</a>
                 <a href="{{ route('index-about') }}">About</a>
                 <a href="{{ route('index-contact') }}">Contact us</a>

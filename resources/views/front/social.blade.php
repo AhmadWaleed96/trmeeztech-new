@@ -1,5 +1,7 @@
 @extends('front.master')
 
+@section('title', 'Social -' . config('app.name'))
+
 @section('content')
 
 <!-- start section title-page -->

@@ -1,5 +1,7 @@
 @extends('front.master')
 
+@section('title', 'Contact -' . config('app.name'))
+
 @section('content')
 
 <!-- start section title-page -->
@@ -36,7 +38,7 @@
               </div>
           </div>
           <div class="d-flex" style="padding: 15px 0;">
-            <img src="image/Usa Flag.png" alt="" width="50px" height="40px" style="margin: 10px 5px;">
+            <img src="{{ asset('front/image/Usa Flag.png') }}" alt="" width="50px" height="40px" style="margin: 10px 5px;">
               <div>
                   <p style="color: white; font-size: 20px; margin: 0;">Location</p>
                   <a style="color: white; font-size: 20px; margin: 0; padding: 0; text-decoration: none;" href="">4030 Plaza Dr 3 Casper, WY 82604 USA</a>
@@ -44,10 +46,10 @@
           </div>
 
           <div class="d-flex" style="padding: 15px 0;">
-            <img src="image/Saudi.png" alt="" width="50px" height="40px" style="margin: 10px 5px;">
+            <img src="{{ asset('front/image/Saudi.png') }}" alt="" width="50px" height="40px" style="margin: 10px 5px;">
             <div>
                 <p style="color: white; font-size: 20px; margin: 0;">Location</p>
-                <a style="color: white; font-size: 20px; margin: 0; padding: 0; text-decoration: none;" href="">4030 Plaza Dr 3 Casper, WY 82604 USA</a>
+                <a style="color: white; font-size: 20px; margin: 0; padding: 0; text-decoration: none;" href="">Saudi Arabia</a>
             </div>
         </div>
       </div>
@@ -83,7 +85,7 @@
             height: 100px;"></textarea>
           </div>
 
-          <button class="" style="background: #003366;box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);border-radius: 10px;color: white;font-weight: 500;font-size: 20px;line-height: 37px;padding: 2px 50px;position: relative;left: 50%;transform: translate(-50%, 10px);">Send <i class="fa-solid fa-paper-plane-top"></i></button>
+          <button class="" style="background: #003366;box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);border-radius: 10px;color: white;font-weight: 500;font-size: 20px;line-height: 37px;padding: 2px 50px;position: relative;left: 50%;transform: translate(-50%, 10px); border: 0;">Send <i class="fa-solid fa-paper-plane-top"></i></button>
 
         </form>
       </div>
